@@ -1,0 +1,21 @@
+#ifndef REDIRECTION_H
+#define REDIRECTION_H
+
+/////////////////////////////////// Includes ///////////////////////////////////
+
+#include <fcntl.h>
+#include <errno.h>
+#include <string.h>
+
+#include "tab.h"
+#include "command.h"
+#include "jokers.h"
+
+////////////////////////////////// Fonction //////////////////////////////////
+
+// Gestion des redirection et des pipeline
+int redirection_manager(int, char **, int, char **, int);
+
+///////////////////////////////////////////////////////////////////////////////
+
+#endif // REDIRECTION_H
